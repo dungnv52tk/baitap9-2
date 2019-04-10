@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiểm tra tài khoản</title>
+</head>
+<body>
+<script>
+  function accountValidation (str) {
+      regexp = /^[_a-z0-9]{6,}$/;
+      if (regexp.test(str)) {
+          return true;
+      } else {
+          return false;
+      }
+  }
+  let acc1 = 'dungnv';
+  let acc2 = '12345'
+  console.log(accountValidation(acc1));
+  console.log(accountValidation(acc2));
+</script>
+</body>
+</html>
